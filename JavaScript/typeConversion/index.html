@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+      // type conversion is done by programmer
+      // in this case it is done using String() method which is global method
+      // global methods are part of window object
+      let result = true;
+      let sres = String(true);
+      document.write(result)
+      document.write("<br>")
+      document.write(typeof result);
+      document.write("<br>")
+      document.write(sres)
+      document.write("<br>")
+      document.write(typeof sres)
+      
+      // 2nd case toString() : not for null and undefined
+      let a = 10;
+      console.log(a.toString())
+      console.log(typeof a.toString())
+      
+      // converting to number
+      //done by global method Number()
+      
+      let b = "25";
+      let total = Number(b);
+      total = total +1;
+      console.log(total);
+      
+      let c = "";
+      console.log(Number(c));
+      
+      let d = " hi ";
+      console.log(Number(d)); // NaN
+      
+      let e = true;
+      console.log((Number(e))); // 1
+      
+      let f = undefined
+      console.log(f) // 0
+      
+      // COnverting to boolean
+      // falsy values: 0,"",NaN, null,undefined
+      // truthy values: rest all are truthy
+      // done by global method Boolean()
+    </script>
+  </head>
+  <body>
+  
+  </body>
+</html>

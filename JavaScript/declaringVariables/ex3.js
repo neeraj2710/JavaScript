@@ -1,0 +1,1 @@
+document.write(`2 to the power 3 is ${Math.pow(2,3)}`)
