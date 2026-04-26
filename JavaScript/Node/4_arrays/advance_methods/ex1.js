@@ -14,8 +14,8 @@ console.log(nums2.lastIndexOf(40));
 
 //3rd method performs sorting method consider elements Strings by default 
 //hence gives wrong result in cas of Numbers by default
-//this is because arrays are hetrogenious in nature
-let sports = ["Cricket","Vollyball","basketball","Badminton"];
+//this is because arrays are heterogeneous in nature
+let sports = ["Cricket","Volleyball","basketball","Badminton"];
 console.log(`Before sorting ${sports}`);
 sports.sort();
 console.log(`After sorting ${sports}`);
@@ -32,7 +32,7 @@ console.log(`Before reversing ${sports}`);
 sports.reverse();
 console.log(`After reversing ${sports}`);
 
-//5th method converts array to comma seprated String and returns it
-console.log(`Befor join() method ${typeof sports}`);
+//5th method converts array to comma-separated String and returns it
+console.log(`Before join() method ${typeof sports}`);
 let str = sports.join();
 console.log(`after join() method ${typeof str}`);
